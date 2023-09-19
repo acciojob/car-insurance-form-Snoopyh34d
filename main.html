@@ -1,16 +1,48 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+<body style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    <form action="" method="post">
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+        <label for="name">Name</label>
+        <input type="text" name="Name" id="name" placeholder="Name" required>
+        <br>
 
+        <label for="email">Email</label>
+        <input type="email" name="Email" id="email" placeholder="Email" required>
+        <br>
+
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="gender_m" required>Male
+        <input type="radio" name="gender" id="gender_f" required>Female
+        <br>
+
+        <label for="cras">Car Brands</label>
+        <select name="car_brands" id="cars">
+            <option value="" disabled selected>--Choose Your Car Brand--</option>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="mercedez">Mercedez</option>
+        </select>
+        <br>
+
+        <label for="carage">Car Age</label>
+        <input type="number" name="Car_age" id="carage" required>
+        <br>
+
+        <label for="dop">Date of Purchage</label>
+        <input type="date" name="DOP" id="dop" required>
+        <br>
+
+        <label for="password">Password</label>
+        <input type="password" name="Password" id="password" required>
+        <br>
+
+        <button value="submit">Submit</button>
+    </form>
 </body>
-
 </html>
